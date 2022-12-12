@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/DataLayer.csproj": {}
+    "/Users/anna/Desktop/loterie_2022/DataLayer/DataLayer.csproj": {}
   },
   "projects": {
-    "/Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/DataLayer.csproj": {
+    "/Users/anna/Desktop/loterie_2022/DataLayer/DataLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/DataLayer.csproj",
+        "projectUniqueName": "/Users/anna/Desktop/loterie_2022/DataLayer/DataLayer.csproj",
         "projectName": "DataLayer",
-        "projectPath": "/Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/DataLayer.csproj",
+        "projectPath": "/Users/anna/Desktop/loterie_2022/DataLayer/DataLayer.csproj",
         "packagesPath": "/Users/anna/.nuget/packages/",
-        "outputPath": "/Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/obj/",
+        "outputPath": "/Users/anna/Desktop/loterie_2022/DataLayer/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/anna/.nuget/NuGet/NuGet.Config"

@@ -3,6 +3,8 @@ using Microsoft.AspNetCore.Mvc;
 using Loterie_project_2022.Models;
 using Loterie_project_2022.Services;
 using Loterie_project_2022.Models.Game;
+using DataLayer.Models;
+using System.Numerics;
 
 namespace Loterie_project_2022.Controllers;
 
@@ -24,13 +26,21 @@ namespace Loterie_project_2022.Controllers;
 
     public IActionResult Create(CreatePlayerViewModel model)
     {
-      
+     
 
-        playerSvc.CreatePlayer(model);
+        if (ModelState.IsValid == false)
+        {
+            return View(model);
+        }
 
-        //traitement de la donnée reçu
-        return RedirectToAction("index", "game");
+        var player = playerSvc.CreatePlayer(model);
+
+        return View("code",player);
+
+
     }
+
+   
 
 
 

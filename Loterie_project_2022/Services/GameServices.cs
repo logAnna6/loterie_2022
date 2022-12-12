@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Loterie_project_2022.Services
 {
-    public class GameServices : IGameServices
+    public class GameServices
     {
         private readonly AppDbContext dbContext;
 
@@ -34,6 +34,7 @@ namespace Loterie_project_2022.Services
                 game_num5 = randomNumbers[4],
                 game_num6 = randomNumbers[5],
                 game_startdate = DateTime.Now,
+                game_enddate = DateTime.Now.AddMinutes(5)
 
 
 
@@ -46,20 +47,7 @@ namespace Loterie_project_2022.Services
 
         }
 
-        public async Task CreateGameAsync()
-        {
-            var timer = new PeriodicTimer(TimeSpan.FromSeconds(1));
-
-            while (await timer.WaitForNextTickAsync())
-            {
-               // if (DateTime.UtcNow.Second == 0)
-                     CreateGame();
-            }
-
-        }
-
-
-
+       
     }
 }
 

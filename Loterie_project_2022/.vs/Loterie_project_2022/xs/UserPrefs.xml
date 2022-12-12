@@ -1,7 +1,6 @@
 ﻿<Properties StartupConfiguration="{42F7171F-2EE9-48A6-9E3E-A531A59738E1}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Loterie__project__2022 PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/GameController.cs">
     <Files>
       <File FileName="Views/_ViewImports.cshtml" />
@@ -12,7 +11,7 @@
       <File FileName="../DataLayer/Models/Game.cs" />
       <File FileName="../DataLayer/Models/Player.cs" />
       <File FileName="Program.cs" />
-      <File FileName="Models/Game/CreatePlayerViewModel.cs" Line="10" Column="6" />
+      <File FileName="Models/Game/CreatePlayerViewModel.cs" />
       <File FileName="Views/Game/Index.cshtml" />
       <File FileName="Services/PlayerService.cs" />
       <File FileName="Services/IPlayerService.cs" />
@@ -21,8 +20,8 @@
       <File FileName="Views/Player/Play.cshtml" />
       <File FileName="Views/Game/Code.cshtml" />
       <File FileName="Views/Shared/_Layout.cshtml" />
-      <File FileName="Services/GameServices.cs" Line="49" Column="14" />
-      <File FileName="Services/IGameServices.cs" Line="9" Column="29" />
+      <File FileName="Services/GameServices.cs" />
+      <File FileName="Services/IGameServices.cs" />
       <File FileName="Models/Game/CreateGameViewModel.cs" />
     </Files>
     <Pads>
@@ -52,8 +51,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Loterie__project__2022 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

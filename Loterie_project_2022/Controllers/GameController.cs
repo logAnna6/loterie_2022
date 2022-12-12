@@ -8,27 +8,22 @@ namespace Loterie_project_2022.Controllers;
 public class GameController : Controller
 {
     private readonly ILogger<GameController> _logger;
-    private readonly IGameServices gameSvc;
+   
 
-    public GameController(ILogger<GameController> logger, IGameServices svc)
+    public GameController(ILogger<GameController> logger)
     {
         _logger = logger;
-        gameSvc = svc;
+   
 
     }
   
 
     public IActionResult Index()
     {
-        gameSvc.CreateGame();
-       // Task.Run(gameSvc.CreateGameAsync);
+     
         return View();
     }
 
-    public IActionResult Code()
-    {
-        return View();
-    }
 
     public IActionResult Result()
     {

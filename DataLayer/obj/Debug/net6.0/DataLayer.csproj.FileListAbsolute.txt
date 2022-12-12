@@ -12,3 +12,17 @@
 /Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/obj/Debug/net6.0/DataLayer.pdb
 /Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/obj/Debug/net6.0/DataLayer.genruntimeconfig.cache
 /Users/anna/Desktop/Appli Loto/Appli_loto/DataLayer/obj/Debug/net6.0/ref/DataLayer.dll
+/Users/anna/Desktop/loterie_2022/DataLayer/bin/Debug/net6.0/DataLayer.deps.json
+/Users/anna/Desktop/loterie_2022/DataLayer/bin/Debug/net6.0/DataLayer.runtimeconfig.json
+/Users/anna/Desktop/loterie_2022/DataLayer/bin/Debug/net6.0/DataLayer.dll
+/Users/anna/Desktop/loterie_2022/DataLayer/bin/Debug/net6.0/DataLayer.pdb
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.csproj.AssemblyReference.cache
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.AssemblyInfoInputs.cache
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.AssemblyInfo.cs
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.csproj.CoreCompileInputs.cache
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.dll
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/refint/DataLayer.dll
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.pdb
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/DataLayer.genruntimeconfig.cache
+/Users/anna/Desktop/loterie_2022/DataLayer/obj/Debug/net6.0/ref/DataLayer.dll
