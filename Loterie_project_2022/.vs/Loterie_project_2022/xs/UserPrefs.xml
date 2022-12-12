@@ -1,0 +1,59 @@
+﻿<Properties StartupConfiguration="{42F7171F-2EE9-48A6-9E3E-A531A59738E1}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="Controllers/GameController.cs">
+    <Files>
+      <File FileName="Views/_ViewImports.cshtml" />
+      <File FileName="Views/_ViewStart.cshtml" />
+      <File FileName="wwwroot/css/site.css" />
+      <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="../DataLayer/AppDbContext.cs" />
+      <File FileName="../DataLayer/Models/Game.cs" />
+      <File FileName="../DataLayer/Models/Player.cs" />
+      <File FileName="Program.cs" />
+      <File FileName="Models/Game/CreatePlayerViewModel.cs" Line="10" Column="6" />
+      <File FileName="Views/Game/Index.cshtml" />
+      <File FileName="Services/PlayerService.cs" />
+      <File FileName="Services/IPlayerService.cs" />
+      <File FileName="Controllers/PlayerController.cs" />
+      <File FileName="Controllers/GameController.cs" Line="24" Column="26" />
+      <File FileName="Views/Player/Play.cshtml" />
+      <File FileName="Views/Game/Code.cshtml" />
+      <File FileName="Views/Shared/_Layout.cshtml" />
+      <File FileName="Services/GameServices.cs" Line="49" Column="14" />
+      <File FileName="Services/IGameServices.cs" Line="9" Column="29" />
+      <File FileName="Models/Game/CreateGameViewModel.cs" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Loterie_project_2022" expanded="True">
+            <Node name="DataLayer" expanded="True">
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True" />
+            </Node>
+            <Node name="Loterie_project_2022" expanded="True">
+              <Node name="Controllers" expanded="True">
+                <Node name="GameController.cs" selected="True" />
+              </Node>
+              <Node name="Models" expanded="True">
+                <Node name="Game" expanded="True" />
+              </Node>
+              <Node name="Services" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Game" expanded="True" />
+                <Node name="Player" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.Loterie__project__2022 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+</Properties>

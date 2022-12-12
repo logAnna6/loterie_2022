@@ -1,0 +1,56 @@
+﻿@model Loterie_project_2022.Models.Game.CreatePlayerViewModel
+
+
+@{
+    ViewData["Title"] = "Jouer";
+}
+
+<div class="tirage">
+
+
+
+
+    <form class="tirage-form" asp-action="Create" asp-controller="player">
+
+        <div class="numbers">
+            <h2>Choisissez 6 numeros</h2>
+
+            <ul>
+                @for (var i = 1; i <= 49; i++)
+                {
+
+                    <li>
+                        <input type="checkbox" name="isChecked" id="@i" class="@(i < 10 ? "small number" : "number")" value="@i"/>
+                        <label for="@i">@i</label>
+                    </li>
+
+
+
+
+
+                    if (i % 7 == 0)
+                    {
+                        @: <br />
+                    }
+                }
+
+            </ul>
+
+
+        </div>
+
+
+        <div class="actions">
+
+            <div id="selection"></div>
+            <div class="buttons">
+                <input type="submit" class="submit" value="Jouer">
+
+                <a href="" class="reset">Réinitialiser</a>
+            </div>
+
+
+        </div>
+    </form>
+
+</div>

@@ -1,0 +1,41 @@
+﻿@{
+    ViewData["Title"] = "Page d'accueil";
+}
+
+
+<div class="tirage">
+    <svg xmlns="http://www.w3.org/2000/svg" width="68.591" height="80.023" viewBox="0 0 68.591 80.023">
+        <path id="Tracé_1" data-name="Tracé 1" d="M48.728,1H25.864V8.621H48.728ZM33.485,50.538h7.621V27.674H33.485Zm30.6-25.188L69.5,19.939a42.1,42.1,0,0,0-5.373-5.373l-5.411,5.411a34.293,34.293,0,1,0,5.373,5.373ZM37.3,73.4A26.674,26.674,0,1,1,63.97,46.728,26.655,26.655,0,0,1,37.3,73.4Z" transform="translate(-3 -1)" fill="#fff" />
+    </svg>
+    <h2>Prochain tirage dans</h2>
+    <p class="time"><span id="timer"></span></p>
+    <p class="info-prize">
+        Participez pour gagner 10 loot <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+            <path id="Icon_awesome-coins" data-name="Icon awesome-coins" d="M0,18.207v1.918C0,21.711,3.863,23,8.625,23s8.625-1.289,8.625-2.875V18.207C15.395,19.514,12,20.125,8.625,20.125S1.855,19.514,0,18.207ZM14.375,5.75C19.137,5.75,23,4.461,23,2.875S19.137,0,14.375,0,5.75,1.289,5.75,2.875,9.613,5.75,14.375,5.75ZM0,13.495v2.318c0,1.586,3.863,2.875,8.625,2.875S17.25,17.4,17.25,15.813V13.495C15.395,15.022,12,15.813,8.625,15.813S1.855,15.022,0,13.495Zm18.688.494C21.262,13.49,23,12.565,23,11.5V9.582a11.031,11.031,0,0,1-4.312,1.55ZM8.625,7.188C3.863,7.188,0,8.8,0,10.781s3.863,3.594,8.625,3.594,8.625-1.608,8.625-3.594S13.387,7.188,8.625,7.188Zm9.851,2.529C21.172,9.231,23,8.279,23,7.188V5.269C21.405,6.4,18.665,7,15.781,7.147A5.031,5.031,0,0,1,18.476,9.717Z" fill="#fff" />
+        </svg>
+    </p>
+    <a asp-area="" asp-controller="Player" asp-action="Play" class="jouer">Jouer</a>
+
+</div>
+<div class="result">
+    <svg xmlns="http://www.w3.org/2000/svg" width="77.332" height="77.351" viewBox="0 0 77.332 77.351">
+        <path id="Tracé_2" data-name="Tracé 2" d="M40.666,64.165l23.9,15.185L58.22,50.731,79.331,31.475l-27.8-2.483L40.666,2,29.8,28.991,2,31.475,23.111,50.731,16.77,79.351Z" transform="translate(-2 -2)" fill="#fff" />
+    </svg>
+
+    <h2>Consulter les résultats</h2>
+    <label class="code-info" for="code">Entrez votre code ici :</label>
+
+    <form action="#" class="check-result">
+        <textarea id="code" name="code"
+                  rows="5" cols="33">
+              </textarea>
+        <div class="res-button">
+            <input type="submit" value="Résultats" class="submit">
+        </div>
+
+   
+    </form>
+
+
+</div>
+
