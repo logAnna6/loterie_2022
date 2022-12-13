@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qWqjWwwWxWKIGAI6h5AELMF2GMomgYTxhgdKunc2kYeAaY+iDbV/juwo0iIyUOwgsbv8+EiSH8IrScTBOFBMZw==",
+  "dgSpecHash": "na6KELrrZfC68VZUn5OBFVWZ8HOtPnWvrEDSth6WK5spESUBYFNORDDOawUPaCL+iV9GYAKewawNSg6Xhu9MEw==",
   "success": true,
   "projectFilePath": "/Users/anna/Desktop/loterie_2022/Loterie_project_2022/Loterie_project_2022.csproj",
   "expectedPackageFiles": [
+    "/Users/anna/.nuget/packages/csharpvitamins.shortguid/2.0.0/csharpvitamins.shortguid.2.0.0.nupkg.sha512",
     "/Users/anna/.nuget/packages/humanizer.core/2.14.1/humanizer.core.2.14.1.nupkg.sha512",
     "/Users/anna/.nuget/packages/messagepack/2.1.152/messagepack.2.1.152.nupkg.sha512",
     "/Users/anna/.nuget/packages/messagepack.annotations/2.1.152/messagepack.annotations.2.1.152.nupkg.sha512",

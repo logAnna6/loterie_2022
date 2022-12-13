@@ -1,5 +1,6 @@
 ﻿using System.Linq;
 using System.Xml.Linq;
+using CSharpVitamins;
 using DataLayer;
 using DataLayer.Models;
 using Loterie_project_2022.Models.Game;
@@ -27,7 +28,7 @@ namespace Loterie_project_2022.Services
 
             List<int> numbers = model.isChecked;
             Guid guid = Guid.NewGuid();
-            var code = guid.ToString();
+            ShortGuid code = guid.ToString();
             var game = dbContext.Games.OrderBy(game => game.gameId).Last().gameId;
             Player player =  new Player()
             {

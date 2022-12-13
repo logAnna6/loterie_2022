@@ -2,32 +2,45 @@
 using Microsoft.AspNetCore.Mvc;
 using Loterie_project_2022.Models;
 using Loterie_project_2022.Services;
+using Loterie_project_2022.Models.Game;
+using Microsoft.EntityFrameworkCore;
 
 namespace Loterie_project_2022.Controllers;
 
 public class GameController : Controller
 {
     private readonly ILogger<GameController> _logger;
-   
+    private readonly IHomeService homeSvc;
 
-    public GameController(ILogger<GameController> logger)
+
+    public GameController(ILogger<GameController> logger, IHomeService HSvc)
     {
         _logger = logger;
+        homeSvc = HSvc;
    
 
     }
-  
 
-    public IActionResult Index()
+    
+    public IActionResult Index(IndexViewModel model)
     {
-     
-        return View();
+        if (ModelState.IsValid == false || model.Code == null)
+        {
+            return View();
+        }
+
+       
+        var result = homeSvc.Verify(model);
+
+        return View("result",result);
+
     }
 
 
     public IActionResult Result()
     {
         return View();
+
     }
 
 

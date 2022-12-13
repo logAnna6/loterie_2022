@@ -320,6 +320,14 @@ li {
     justify-content: space-evenly;
 }
 
+#code {
+    width: 250px;
+    height: 110px;
+    background: rgba(255, 255, 255, 0.863);
+    border: none;
+    border-radius: 10px;
+}
+
 label {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
     }

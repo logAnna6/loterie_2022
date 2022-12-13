@@ -1,4 +1,5 @@
-﻿@{
+﻿@model Loterie_project_2022.Models.Game.ResultViewModel
+@{
     ViewData["Title"] = "Vos résultats";
 }
 
@@ -12,7 +13,7 @@
                 <path id="Tracé_5" data-name="Tracé 5" d="M13.439,17.659H9.96v3.48h3.48Zm6.96,0h-3.48v3.48H20.4Zm6.96,0h-3.48v3.48h3.48ZM30.838,5.48H29.1V2h-3.48V5.48H11.7V2H8.22V5.48H6.48A3.464,3.464,0,0,0,3.017,8.96L3,33.318A3.479,3.479,0,0,0,6.48,36.8H30.838a3.49,3.49,0,0,0,3.48-3.48V8.96A3.49,3.49,0,0,0,30.838,5.48Zm0,27.838H6.48V14.179H30.838Z" transform="translate(-3 -2)" fill="#fafafa" />
             </svg><span class="label-info"> Date et l'heure de tirage</span>
         </label>
-        <input id="date" name="date" value=""></input>
+        <input id="date" name="date" value="@Model.gameEnddate"></input>
     </div>
     <div class="result-line">
         <label for="game" class="game">
@@ -24,12 +25,12 @@
             </svg><span class="label-info"> Résultat du tirage</span>
         </label>
         <div class="numbers-game">
-            <input class="number-game" type="button" value="1" id="1" />
-            <input class="number-game" type="button" value="2" id="2" />
-            <input class="number-game" type="button" value="3" id="3" />
-            <input class="number-game" type="button" value="4" id="4" />
-            <input class="number-game" type="button" value="5" id="5" />
-            <input class="number-game" type="button" value="6" id="6" />
+            <input class="number-game" type="button" value="@Model.gameNum1" id="1" />
+            <input class="number-game" type="button" value="@Model.gameNum2" id="2" />
+            <input class="number-game" type="button" value="@Model.gameNum3" id="3" />
+            <input class="number-game" type="button" value="@Model.gameNum4" id="4" />
+            <input class="number-game" type="button" value="@Model.gameNum5" id="5" />
+            <input class="number-game" type="button" value="@Model.gameNum6" id="6" />
 
         </div>
 
@@ -47,12 +48,12 @@
             </svg><span class="label-info"> Votre jeux</span>
         </label>
         <div class="numbers-game">
-            <input class="number-game" type="button" value="1" id="1" />
-            <input class="number-game" type="button" value="2" id="2" />
-            <input class="number-game" type="button" value="3" id="3" />
-            <input class="number-game" type="button" value="4" id="4" />
-            <input class="number-game" type="button" value="5" id="5" />
-            <input class="number-game" type="button" value="6" id="6" />
+            <input class="number-game" type="button" value="@Model.playerNum1" id="1" />
+            <input class="number-game" type="button" value="@Model.playerNum2" id="2" />
+            <input class="number-game" type="button" value="@Model.playerNum3" id="3" />
+            <input class="number-game" type="button" value="@Model.playerNum4" id="4" />
+            <input class="number-game" type="button" value="@Model.playerNum5" id="5" />
+            <input class="number-game" type="button" value="@Model.playerNum6" id="6" />
 
         </div>
 
@@ -69,7 +70,7 @@
 
             </svg><span class="label-info"> Votre gain</span>
         </label>
-        <input id="gain" name="gain" value=""></input>
+        <input id="gain" name="gain" value="@Model.playerPrize"></input>
     </div>
 
 

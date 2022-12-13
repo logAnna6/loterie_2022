@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets/Loterie_project_2022.bundle.scp.css"
     },
     {
+      "Id": "/Users/anna/Desktop/loterie_2022/Loterie_project_2022/wwwroot/.DS_Store",
+      "PackagePath": "staticwebassets/.DS_Store"
+    },
+    {
       "Id": "/Users/anna/Desktop/loterie_2022/Loterie_project_2022/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },

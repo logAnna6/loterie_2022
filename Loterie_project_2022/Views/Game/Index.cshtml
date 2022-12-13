@@ -1,4 +1,6 @@
-﻿@{
+﻿@model Loterie_project_2022.Models.Game.IndexViewModel
+
+@{
     ViewData["Title"] = "Page d'accueil";
 }
 
@@ -25,15 +27,14 @@
     <h2>Consulter les résultats</h2>
     <label class="code-info" for="code">Entrez votre code ici :</label>
 
-    <form action="#" class="check-result">
-        <textarea id="code" name="code"
-                  rows="5" cols="33">
-              </textarea>
+    <form asp-action="Index" asp-controller="game" class="check-result">
+        <input id="code" asp-for="Code" />
+
         <div class="res-button">
             <input type="submit" value="Résultats" class="submit">
         </div>
 
-   
+
     </form>
 
 

@@ -8,6 +8,7 @@ var builder = WebApplication.CreateBuilder(args);
 var dbPath = Path.Combine(AppContext.BaseDirectory, "data.sqlite");
 // Add services to the container.
 builder.Services.AddScoped<IPlayerService, PlayerService>();
+builder.Services.AddScoped<IHomeService,HomeServices>();
 builder.Services.AddScoped<GameServices>();
 
 builder.Services.AddHostedService<CronService>();

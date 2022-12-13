@@ -2,6 +2,19 @@
   "version": 3,
   "targets": {
     "net6.0": {
+      "CSharpVitamins.ShortGuid/2.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CSharpVitamins.ShortGuid.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/CSharpVitamins.ShortGuid.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -3750,6 +3763,22 @@
     }
   },
   "libraries": {
+    "CSharpVitamins.ShortGuid/2.0.0": {
+      "sha512": "NUMSSw0Eyfxl+pDzflR5kOdbmy4wkqhvXU3Yx0SGMRjOip/zQpSgdAjYtGbq8gnds1rieS3l+G5JmMAdMc+iTw==",
+      "type": "package",
+      "path": "csharpvitamins.shortguid/2.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.md",
+        "csharpvitamins.shortguid.2.0.0.nupkg.sha512",
+        "csharpvitamins.shortguid.nuspec",
+        "lib/net40/CSharpVitamins.ShortGuid.dll",
+        "lib/net40/CSharpVitamins.ShortGuid.xml",
+        "lib/netstandard2.0/CSharpVitamins.ShortGuid.dll",
+        "lib/netstandard2.0/CSharpVitamins.ShortGuid.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -10474,6 +10503,7 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "CSharpVitamins.ShortGuid >= 2.0.0",
       "DataLayer >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.0",
@@ -10525,6 +10555,10 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
+          "CSharpVitamins.ShortGuid": {
+            "target": "Package",
+            "version": "[2.0.0, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[7.0.0, )"

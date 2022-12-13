@@ -5,6 +5,7 @@ using DataLayer;
 using DataLayer.Models;
 using Loterie_project_2022.Models.Game;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace Loterie_project_2022.Services
 {
@@ -47,7 +48,7 @@ namespace Loterie_project_2022.Services
 
         }
 
-       
+
     }
 }
 
