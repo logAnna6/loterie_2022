@@ -23,6 +23,8 @@ namespace Loterie_project_2022.Services
             
             _timer = new Timer(DoWork, null, TimeSpan.Zero,
           TimeSpan.FromMinutes(5));
+      
+
 
             return Task.CompletedTask;
         }
@@ -37,5 +39,9 @@ namespace Loterie_project_2022.Services
                 GameCreate.CreateGame();
             }
         }
+
+       
+
+
     }
 }

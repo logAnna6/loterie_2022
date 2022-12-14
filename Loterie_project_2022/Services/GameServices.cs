@@ -34,11 +34,9 @@ namespace Loterie_project_2022.Services
                 game_num4 = randomNumbers[3],
                 game_num5 = randomNumbers[4],
                 game_num6 = randomNumbers[5],
+                game_prize = 10,
                 game_startdate = DateTime.Now,
                 game_enddate = DateTime.Now.AddMinutes(5)
-
-
-
 
             });
 
@@ -47,6 +45,8 @@ namespace Loterie_project_2022.Services
 
 
         }
+
+      
 
 
     }

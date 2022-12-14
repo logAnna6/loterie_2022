@@ -1,51 +1,50 @@
 ﻿<Properties StartupConfiguration="{42F7171F-2EE9-48A6-9E3E-A531A59738E1}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/PlayerService.cs">
+  <MonoDevelop.Ide.ItemProperties.Loterie__project__2022 PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Program.cs">
     <Files>
       <File FileName="Views/_ViewImports.cshtml" />
       <File FileName="Views/_ViewStart.cshtml" />
-      <File FileName="wwwroot/css/site.css" Line="308" Column="29" />
+      <File FileName="wwwroot/css/site.css" />
       <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" />
       <File FileName="../DataLayer/AppDbContext.cs" />
       <File FileName="../DataLayer/Models/Game.cs" />
       <File FileName="../DataLayer/Models/Player.cs" />
-      <File FileName="Program.cs" Line="11" Column="53" />
-      <File FileName="Models/Game/CreatePlayerViewModel.cs" Line="1" Column="1" />
-      <File FileName="Views/Game/Index.cshtml" Line="1" Column="1" />
-      <File FileName="Services/PlayerService.cs" Line="35" Column="1" />
-      <File FileName="Services/IPlayerService.cs" Line="12" Column="1" />
-      <File FileName="Controllers/PlayerController.cs" Line="18" Column="25" />
-      <File FileName="Controllers/GameController.cs" Line="35" Column="38" />
-      <File FileName="Views/Player/Play.cshtml" Line="13" Column="74" />
+      <File FileName="Program.cs" Line="51" Column="1" />
+      <File FileName="Models/Game/CreatePlayerViewModel.cs" />
+      <File FileName="Views/Game/Index.cshtml" />
+      <File FileName="Services/PlayerService.cs" />
+      <File FileName="Services/IPlayerService.cs" />
+      <File FileName="Controllers/PlayerController.cs" />
+      <File FileName="Controllers/GameController.cs" />
+      <File FileName="Views/Player/Play.cshtml" />
       <File FileName="Views/Shared/_Layout.cshtml" />
-      <File FileName="Services/GameServices.cs" Line="49" Column="10" />
-      <File FileName="Models/Game/ShowCodeViewModel.cs" Line="10" Column="1" />
-      <File FileName="Views/Player/Code.cshtml" Line="1" Column="1" />
-      <File FileName="Services/CronService.cs" Line="5" Column="1" />
-      <File FileName="Views/Game/Result.cshtml" Line="16" Column="63" />
-      <File FileName="Models/Game/IndexViewModel.cs" Line="7" Column="3" />
-      <File FileName="Services/HomeService.cs" Line="27" Column="1" />
-      <File FileName="Services/IHomeService.cs" Line="9" Column="52" />
-      <File FileName="Models/Game/ResultViewModel.cs" Line="6" Column="35" />
+      <File FileName="Services/GameServices.cs" />
+      <File FileName="Models/Game/ShowCodeViewModel.cs" />
+      <File FileName="Views/Player/Code.cshtml" />
+      <File FileName="Services/CronService.cs" />
+      <File FileName="Views/Game/Result.cshtml" />
+      <File FileName="Models/Game/IndexViewModel.cs" />
+      <File FileName="Services/HomeService.cs" />
+      <File FileName="Services/IHomeService.cs" />
+      <File FileName="Models/Game/ResultViewModel.cs" />
+      <File FileName="../DataLayer/Migrations/20221129132955_change_id.Designer.cs" />
+      <File FileName="../DataLayer/Migrations/20221213132659_add_default.Designer.cs" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Loterie_project_2022" expanded="True">
             <Node name="DataLayer" expanded="True">
+              <Node name="Dependencies" expanded="True" />
               <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
             <Node name="Loterie_project_2022" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="PackageDependencies" expanded="True">
-                  <Node name="CSharpVitamins.ShortGuid" selected="True" />
-                </Node>
-              </Node>
               <Node name="Controllers" expanded="True" />
               <Node name="Models" expanded="True">
                 <Node name="Game" expanded="True" />
@@ -59,12 +58,12 @@
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
               </Node>
+              <Node name="Program.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Loterie__project__2022 PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

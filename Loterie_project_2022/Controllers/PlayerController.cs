@@ -33,6 +33,7 @@ namespace Loterie_project_2022.Controllers;
             return View(model);
         }
 
+
         var player = playerSvc.CreatePlayer(model);
 
         return View("code",player);

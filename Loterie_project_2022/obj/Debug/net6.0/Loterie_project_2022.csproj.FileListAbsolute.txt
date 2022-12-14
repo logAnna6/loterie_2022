@@ -348,6 +348,7 @@
 /Users/anna/Desktop/loterie_2022/Loterie_project_2022/bin/Debug/net6.0/Loterie_project_2022.runtimeconfig.json
 /Users/anna/Desktop/loterie_2022/Loterie_project_2022/bin/Debug/net6.0/Loterie_project_2022.dll
 /Users/anna/Desktop/loterie_2022/Loterie_project_2022/bin/Debug/net6.0/Loterie_project_2022.pdb
+/Users/anna/Desktop/loterie_2022/Loterie_project_2022/bin/Debug/net6.0/CSharpVitamins.ShortGuid.dll
 /Users/anna/Desktop/loterie_2022/Loterie_project_2022/bin/Debug/net6.0/Humanizer.dll
 /Users/anna/Desktop/loterie_2022/Loterie_project_2022/bin/Debug/net6.0/MessagePack.dll
 /Users/anna/Desktop/loterie_2022/Loterie_project_2022/bin/Debug/net6.0/MessagePack.Annotations.dll

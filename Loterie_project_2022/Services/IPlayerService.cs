@@ -6,6 +6,7 @@ namespace Loterie_project_2022.Services
 	public interface IPlayerService
 	{
 		ShowCodeViewModel CreatePlayer(CreatePlayerViewModel model);
-	}
+
+    }
 }
 

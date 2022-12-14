@@ -18,6 +18,7 @@ namespace DataLayer.Models
         public int player_num5 { get; set; }
         public int player_num6 { get; set; }
 
+        public int player_rang { get; set; }
         public int player_prize { get; set; }
         public DateTime player_reg_date { get; set; }
 

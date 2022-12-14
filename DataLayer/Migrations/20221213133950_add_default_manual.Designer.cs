@@ -3,6 +3,7 @@ using System;
 using DataLayer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DataLayer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20221213133950_add_default_manual")]
+    partial class adddefaultmanual
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "7.0.0");
@@ -45,7 +48,7 @@ namespace DataLayer.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("game_prize")
-                        .HasColumnType("INTEGER");
+                        .HasColumnType("INTEGER").HasDefaultValue(10);
 
                     b.Property<DateTime>("game_startdate")
                         .HasColumnType("TEXT");
@@ -87,9 +90,6 @@ namespace DataLayer.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<int>("player_prize")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int>("player_rang")
                         .HasColumnType("INTEGER");
 
                     b.Property<DateTime>("player_reg_date")
