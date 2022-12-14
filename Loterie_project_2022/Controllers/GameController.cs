@@ -27,6 +27,7 @@ public class GameController : Controller
     {
         if (ModelState.IsValid == false)
         {
+            ViewData["prize"] = playerSvc.GetLastGame().game_prize;
             ViewData["startGame"] = playerSvc.GetLastGame().game_startdate.ToString("o");
             ViewData["endGame"] = playerSvc.GetLastGame().game_enddate.ToString("o");
             return View();

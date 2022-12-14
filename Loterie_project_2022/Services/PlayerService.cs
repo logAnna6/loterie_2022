@@ -52,7 +52,8 @@ namespace Loterie_project_2022.Services
             if (rang == 6)
             {
                 rangFinal = 1;
-                
+  
+
             }
             else if(rang == 5){
 
@@ -63,8 +64,12 @@ namespace Loterie_project_2022.Services
                 rangFinal = 3;
             }
 
-            //recuperation de 60 et 20 pourcents de la derniere cagnotte
             int firstRang = GetLastGame().game_prize * 60 / 100;
+            int FirstRangNum = dbContext.Players.Where(g => g.gameId == GetLastGame().gameId).Where(p => p.player_rang == 1).Count();
+            int FinalGain = (int)Math.Floor((double)(firstRang / FirstRangNum));
+
+            //recuperation de 60 et 20 pourcents de la derniere cagnotte
+
             int otherRangs = GetLastGame().game_prize * 20 / 100;
 
 
@@ -78,7 +83,7 @@ namespace Loterie_project_2022.Services
                 player_num4 = numbers[3],
                 player_num5 = numbers[4],
                 player_num6 = numbers[5],
-               // player_prize = rang,
+                player_prize = FinalGain,
                 player_rang = rangFinal,
                 player_code = code,
                 player_reg_date = DateTime.Now,
@@ -103,7 +108,7 @@ namespace Loterie_project_2022.Services
             {
                 playerCode = player.player_code
             };
-
+            ()
 
 
 
@@ -117,11 +122,6 @@ namespace Loterie_project_2022.Services
 
         }
 
-
-       /* public void updatePrize()
-        {
-            int rize
-        }*/
 
 
 
