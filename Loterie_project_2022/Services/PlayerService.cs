@@ -31,7 +31,6 @@ namespace Loterie_project_2022.Services
             List<int> numbers = model.isChecked;
             Guid guid = Guid.NewGuid();
             ShortGuid code = guid.ToString();
-            var game = dbContext.Games.OrderBy(game => game.gameId).Last();
 
             /*List<int> prizeCount = dbContext.Games.Where(q => q.gameId == game.gameId)
      .Select(q => new { q.game_num1,q.game_num2, q.game_num3, q.game_num4, q.game_num5, q.game_num6 })
@@ -39,16 +38,17 @@ namespace Loterie_project_2022.Services
 
             List<int> gameNum = new List<int>();
 
-            gameNum.Add(game.game_num1);
-            gameNum.Add(game.game_num2);
-            gameNum.Add(game.game_num3);
-            gameNum.Add(game.game_num4);
-            gameNum.Add(game.game_num5);
-            gameNum.Add(game.game_num6);
+            gameNum.Add(GetLastGame().game_num1);
+            gameNum.Add(GetLastGame().game_num2);
+            gameNum.Add(GetLastGame().game_num3);
+            gameNum.Add(GetLastGame().game_num4);
+            gameNum.Add(GetLastGame().game_num5);
+            gameNum.Add(GetLastGame().game_num6);
 
 
             int rang = gameNum.Intersect(numbers).Count();
             int rangFinal = 0;
+
 
 
             if (rang == 6)
@@ -81,7 +81,7 @@ namespace Loterie_project_2022.Services
                 player_rang = rangFinal,
                 player_code = code,
                 player_reg_date = DateTime.Now,
-                gameId = game.gameId
+                gameId = GetLastGame().gameId
 
             };
 
@@ -89,7 +89,7 @@ namespace Loterie_project_2022.Services
 
 
 
-            game.game_prize = game.game_prize + 1;
+            GetLastGame().game_prize = GetLastGame().game_prize + 1;
 
 
 
@@ -105,6 +105,14 @@ namespace Loterie_project_2022.Services
 
 
 
+
+        }
+
+
+        public Game GetLastGame()
+        {
+
+           return dbContext.Games.OrderBy(game => game.gameId).Last();
 
         }
 

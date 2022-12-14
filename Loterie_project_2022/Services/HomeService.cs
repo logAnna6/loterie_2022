@@ -26,7 +26,7 @@ namespace Loterie_project_2022.Services
           var testcode = model.Code.Trim();
           var query = dbContext.Players.Where(player => player.player_code.Contains(testcode)).Include(game=>game.Game).SingleOrDefault();
 
-            
+          
             return new ResultViewModel() {
          
                 playerNum1= query.player_num1,
@@ -43,11 +43,11 @@ namespace Loterie_project_2022.Services
                 gameNum5 = query.Game.game_num5,
                 gameNum6 = query.Game.game_num6,
                 gameEnddate = query.Game.game_enddate,
-
+               
 
             };
-           
 
+          
 
         }
 

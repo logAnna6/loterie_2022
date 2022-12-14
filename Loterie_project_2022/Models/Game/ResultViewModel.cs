@@ -11,6 +11,7 @@ namespace Loterie_project_2022.Models.Game
         public int gameNum4 { get; set; }
         public int gameNum5 { get; set; }
         public int gameNum6 { get; set; }
+        public int gamePrize { get; set; }
 
         public int playerNum1 { get; set; }
         public int playerNum2 { get; set; }
@@ -20,6 +21,7 @@ namespace Loterie_project_2022.Models.Game
         public int playerNum6 { get; set; }
 
         public int playerPrize { get; set; }
+
     }
 }
 

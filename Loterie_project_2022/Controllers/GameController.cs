@@ -4,6 +4,9 @@ using Loterie_project_2022.Models;
 using Loterie_project_2022.Services;
 using Loterie_project_2022.Models.Game;
 using Microsoft.EntityFrameworkCore;
+using DataLayer.Models;
+using System.Collections.Generic;
+using System.Xml.Linq;
 
 namespace Loterie_project_2022.Controllers;
 
@@ -11,12 +14,13 @@ public class GameController : Controller
 {
     private readonly ILogger<GameController> _logger;
     private readonly IHomeService homeSvc;
+    private readonly IPlayerService playerSvc;
 
-
-    public GameController(ILogger<GameController> logger, IHomeService HSvc)
+    public GameController(ILogger<GameController> logger, IHomeService HSvc, IPlayerService Psvc)
     {
         _logger = logger;
         homeSvc = HSvc;
+        playerSvc = Psvc;
    
 
     }
@@ -26,13 +30,21 @@ public class GameController : Controller
     {
         if (ModelState.IsValid == false || model.Code == null)
         {
+            ViewData["startGame"] =playerSvc.GetLastGame().game_startdate.ToString("o");
+            ViewData["endGame"] = playerSvc.GetLastGame().game_enddate.ToString("o");
+
             return View();
         }
 
-       
+        if(string.IsNullOrEmpty(model.Code)) { 
         var result = homeSvc.Verify(model);
 
         return View("result",result);
+        }
+        else
+        {
+            return View ("Error");
+        }
 
     }
 
