@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@{
+    var lastg = ViewData["startGame"];
+    var endg = ViewData["endGame"];
+}
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
@@ -38,6 +43,8 @@
                     @if (ViewData["Title"] == "Jouer")
                     {
                         <div class="small-timer">
+                            <input value="@lastg" id="timeref" type="hidden" />
+                            <input value="@endg" id="timerefend" type="hidden" />
                             <svg xmlns="http://www.w3.org/2000/svg" width="22.689" height="26.471" viewBox="0 0 22.689 26.471">
                                 <path id="Tracé_4" data-name="Tracé 4" d="M18.126,1H10.563V3.521h7.563ZM13.084,17.387h2.521V9.824H13.084ZM23.206,9.055,25,7.265a13.926,13.926,0,0,0-1.777-1.777l-1.79,1.79a11.344,11.344,0,1,0,1.777,1.777ZM14.345,24.95a8.824,8.824,0,1,1,8.824-8.824A8.817,8.817,0,0,1,14.345,24.95Z" transform="translate(-3 -1)" />
                             </svg>

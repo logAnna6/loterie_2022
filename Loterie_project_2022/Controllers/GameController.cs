@@ -3,10 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Loterie_project_2022.Models;
 using Loterie_project_2022.Services;
 using Loterie_project_2022.Models.Game;
-using Microsoft.EntityFrameworkCore;
-using DataLayer.Models;
-using System.Collections.Generic;
-using System.Xml.Linq;
+
 
 namespace Loterie_project_2022.Controllers;
 
@@ -28,25 +25,22 @@ public class GameController : Controller
     
     public IActionResult Index(IndexViewModel model)
     {
-        if (ModelState.IsValid == false || model.Code == null)
+        if (ModelState.IsValid == false)
         {
-            ViewData["startGame"] =playerSvc.GetLastGame().game_startdate.ToString("o");
+            ViewData["startGame"] = playerSvc.GetLastGame().game_startdate.ToString("o");
             ViewData["endGame"] = playerSvc.GetLastGame().game_enddate.ToString("o");
-
             return View();
         }
 
-        if(string.IsNullOrEmpty(model.Code)) { 
+        
         var result = homeSvc.Verify(model);
 
         return View("result",result);
-        }
-        else
-        {
-            return View ("Error");
-        }
+     
+        
 
     }
+
 
 
     public IActionResult Result()

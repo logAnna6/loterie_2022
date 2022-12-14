@@ -20,7 +20,9 @@ namespace Loterie_project_2022.Controllers;
     }
         public IActionResult Play()
         {
-            return View();
+        ViewData["startGame"] = playerSvc.GetLastGame().game_startdate.ToString("o");
+        ViewData["endGame"] = playerSvc.GetLastGame().game_enddate.ToString("o");
+        return View();
         }
 
 

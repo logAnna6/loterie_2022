@@ -5,7 +5,9 @@ namespace Loterie_project_2022.Models.Game
 {
 	public class IndexViewModel
 	{
-        public DateTime gameEnddate { get; set; }
+
+
+        [StringLength(22, ErrorMessage = "Votre code contient 22 charactères !")]
         public string Code { get; set; }
     }
 }

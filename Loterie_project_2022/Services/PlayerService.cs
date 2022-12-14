@@ -32,9 +32,7 @@ namespace Loterie_project_2022.Services
             Guid guid = Guid.NewGuid();
             ShortGuid code = guid.ToString();
 
-            /*List<int> prizeCount = dbContext.Games.Where(q => q.gameId == game.gameId)
-     .Select(q => new { q.game_num1,q.game_num2, q.game_num3, q.game_num4, q.game_num5, q.game_num6 })
-     .ToList();*/
+          
 
             List<int> gameNum = new List<int>();
 
@@ -50,7 +48,7 @@ namespace Loterie_project_2022.Services
             int rangFinal = 0;
 
 
-
+            // attribution de rang selon le nombre de chiffres gagnants
             if (rang == 6)
             {
                 rangFinal = 1;
@@ -65,6 +63,9 @@ namespace Loterie_project_2022.Services
                 rangFinal = 3;
             }
 
+            //recuperation de 60 et 20 pourcents de la derniere cagnotte
+            int firstRang = GetLastGame().game_prize * 60 / 100;
+            int otherRangs = GetLastGame().game_prize * 20 / 100;
 
 
             Player player = new Player()
@@ -115,6 +116,12 @@ namespace Loterie_project_2022.Services
            return dbContext.Games.OrderBy(game => game.gameId).Last();
 
         }
+
+
+       /* public void updatePrize()
+        {
+            int rize
+        }*/
 
 
 
