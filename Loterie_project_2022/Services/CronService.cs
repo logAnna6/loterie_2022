@@ -20,7 +20,7 @@ namespace Loterie_project_2022.Services
         }
         protected override Task ExecuteAsync(CancellationToken stoppingToken)
         {
-            
+            //ajout de tirage dans la base de données chaques 5 minutes
             _timer = new Timer(DoWork, null, TimeSpan.Zero,
           TimeSpan.FromMinutes(5));
       
@@ -35,7 +35,6 @@ namespace Loterie_project_2022.Services
             {
                 var GameCreate = scope.ServiceProvider.GetRequiredService<GameServices>();
 
-                // Run something
                 GameCreate.CreateGame();
             }
         }

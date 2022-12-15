@@ -32,8 +32,7 @@ namespace Loterie_project_2022.Services
             Guid guid = Guid.NewGuid();
             ShortGuid code = guid.ToString();
 
-          
-
+          //ajout ge num tirage dans la liste pour intersect
             List<int> gameNum = new List<int>();
 
             gameNum.Add(GetLastGame().game_num1);
@@ -46,7 +45,6 @@ namespace Loterie_project_2022.Services
 
             int rang = gameNum.Intersect(numbers).Count();
             int rangFinal = 0;
-            int FinalGain = 0;
            
             int otherRangs = GetLastGame().game_prize * 20 / 100;
 
@@ -117,7 +115,7 @@ namespace Loterie_project_2022.Services
 
         }
 
-
+        // recuperation de dernier tirage
         public Game GetLastGame()
         {
 
@@ -125,7 +123,7 @@ namespace Loterie_project_2022.Services
 
         }
 
-
+        //calcul de prix final
         public int GetPrize( int rangFinal)
         {
             int firstRang = 0;
@@ -134,11 +132,11 @@ namespace Loterie_project_2022.Services
             }
             else
             {
-             firstRang = GetLastGame().game_prize * 20 / 100;
+            firstRang = GetLastGame().game_prize * 20 / 100;
 
             }
             int FirstRangNum = dbContext.Players.Where(g => g.gameId == GetLastGame().gameId).Where(p => p.player_rang == rangFinal).Count();
-            if(FirstRangNum > 0) {
+            if(FirstRangNum < 0) {
             return (int)Math.Floor((double)(firstRang / FirstRangNum));
             }
 

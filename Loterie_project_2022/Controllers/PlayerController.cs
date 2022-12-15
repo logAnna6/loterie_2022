@@ -18,6 +18,7 @@ namespace Loterie_project_2022.Controllers;
         playerSvc = svc;
 
     }
+        //page jouer avec la grille
         public IActionResult Play()
         {
         ViewData["startGame"] = playerSvc.GetLastGame().game_startdate.ToString("o");
@@ -25,7 +26,7 @@ namespace Loterie_project_2022.Controllers;
         return View();
         }
 
-
+    //créetion de joueur et la redirection vers la page avec le code
     public IActionResult Create(CreatePlayerViewModel model)
     {
      

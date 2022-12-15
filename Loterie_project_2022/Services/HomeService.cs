@@ -24,7 +24,8 @@ namespace Loterie_project_2022.Services
         {
           
           var testcode = model.Code.Trim();
-        
+
+          // recuperation de joueur par verification du code 
           var query = dbContext.Players.Where(player => player.player_code.Contains(testcode)).Include(game=>game.Game).SingleOrDefault();
 
           
