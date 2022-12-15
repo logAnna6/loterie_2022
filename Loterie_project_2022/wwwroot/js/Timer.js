@@ -11,7 +11,7 @@ var jsDateEnd = new Date(Date.parse(timeend));
         const seconds = Math.floor((total / 1000) % 60);
         const minutes = Math.floor((total / 1000 / 60) % 60);
 
-        if (minutes <= 1) {
+        if (minutes <= 0) {
             document.getElementById('play').style.visibility = 'hidden';
         }
         
