@@ -19,8 +19,8 @@ var jsDateEnd = new Date(Date.parse(timeend));
         document.getElementById('timer').innerHTML = minutes+":"+seconds;
         // };
 
-        if (minutes == 0) {
-            clearInterval(countdownInterval);
+        if (minutes == 0 && seconds == 0) {
+            clearInterval();
             window.location.reload();
         }
 
