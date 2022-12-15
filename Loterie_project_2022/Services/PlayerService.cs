@@ -80,8 +80,8 @@ namespace Loterie_project_2022.Services
                 player_num4 = numbers[3],
                 player_num5 = numbers[4],
                 player_num6 = numbers[5],
-                player_prize = GetPrize(rangFinal),
                 player_rang = rangFinal,
+                player_prize = GetPrize(rangFinal),
                 player_code = code,
                 player_reg_date = DateTime.Now,
                 gameId = GetLastGame().gameId
