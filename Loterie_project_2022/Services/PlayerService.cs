@@ -128,7 +128,15 @@ namespace Loterie_project_2022.Services
 
         public int GetPrize( int rangFinal)
         {
-            int firstRang = GetLastGame().game_prize * 60 / 100;
+            int firstRang = 0;
+            if (rangFinal == 1) { 
+            firstRang = GetLastGame().game_prize * 60 / 100;
+            }
+            else
+            {
+             firstRang = GetLastGame().game_prize * 20 / 100;
+
+            }
             int FirstRangNum = dbContext.Players.Where(g => g.gameId == GetLastGame().gameId).Where(p => p.player_rang == rangFinal).Count();
             if(FirstRangNum > 0) {
             return (int)Math.Floor((double)(firstRang / FirstRangNum));

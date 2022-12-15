@@ -1,4 +1,5 @@
 ﻿<Properties StartupConfiguration="{42F7171F-2EE9-48A6-9E3E-A531A59738E1}|Default">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
@@ -9,31 +10,35 @@
     <Files>
       <File FileName="Views/_ViewImports.cshtml" />
       <File FileName="Views/_ViewStart.cshtml" />
-      <File FileName="wwwroot/css/site.css" />
-      <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" />
+      <File FileName="wwwroot/css/site.css" Line="336" Column="4" />
+      <File FileName="Views/Shared/_ValidationScriptsPartial.cshtml" Line="1" Column="1" />
       <File FileName="../DataLayer/AppDbContext.cs" />
       <File FileName="../DataLayer/Models/Game.cs" />
-      <File FileName="../DataLayer/Models/Player.cs" />
-      <File FileName="Program.cs" Line="51" Column="1" />
-      <File FileName="Models/Game/CreatePlayerViewModel.cs" />
-      <File FileName="Views/Game/Index.cshtml" />
-      <File FileName="Services/PlayerService.cs" />
-      <File FileName="Services/IPlayerService.cs" />
-      <File FileName="Controllers/PlayerController.cs" />
-      <File FileName="Controllers/GameController.cs" />
-      <File FileName="Views/Player/Play.cshtml" />
-      <File FileName="Views/Shared/_Layout.cshtml" />
-      <File FileName="Services/GameServices.cs" />
-      <File FileName="Models/Game/ShowCodeViewModel.cs" />
-      <File FileName="Views/Player/Code.cshtml" />
-      <File FileName="Services/CronService.cs" />
-      <File FileName="Views/Game/Result.cshtml" />
-      <File FileName="Models/Game/IndexViewModel.cs" />
-      <File FileName="Services/HomeService.cs" />
-      <File FileName="Services/IHomeService.cs" />
-      <File FileName="Models/Game/ResultViewModel.cs" />
+      <File FileName="../DataLayer/Models/Player.cs" Line="3" Column="34" />
+      <File FileName="Program.cs" Line="41" Column="22" />
+      <File FileName="Models/Game/CreatePlayerViewModel.cs" Line="1" Column="1" />
+      <File FileName="Views/Game/Index.cshtml" Line="22" Column="38" />
+      <File FileName="Services/PlayerService.cs" Line="140" Column="42" />
+      <File FileName="Services/IPlayerService.cs" Line="10" Column="22" />
+      <File FileName="Controllers/PlayerController.cs" Line="24" Column="82" />
+      <File FileName="Controllers/GameController.cs" Line="30" Column="67" />
+      <File FileName="Views/Player/Play.cshtml" Line="49" Column="36" />
+      <File FileName="Views/Shared/_Layout.cshtml" Line="4" Column="2" />
+      <File FileName="Services/GameServices.cs" Line="1" Column="1" />
+      <File FileName="Models/Game/ShowCodeViewModel.cs" Line="1" Column="1" />
+      <File FileName="Views/Player/Code.cshtml" Line="13" Column="28" />
+      <File FileName="Services/CronService.cs" Line="1" Column="1" />
+      <File FileName="Views/Game/Result.cshtml" Line="73" Column="73" />
+      <File FileName="Models/Game/IndexViewModel.cs" Line="10" Column="62" />
+      <File FileName="Services/HomeService.cs" Line="36" Column="48" />
+      <File FileName="Services/IHomeService.cs" Line="1" Column="1" />
+      <File FileName="Models/Game/ResultViewModel.cs" Line="6" Column="9" />
       <File FileName="../DataLayer/Migrations/20221129132955_change_id.Designer.cs" />
       <File FileName="../DataLayer/Migrations/20221213132659_add_default.Designer.cs" />
+      <File FileName="wwwroot/js/Timer.js" Line="5" Column="1" />
+      <File FileName="wwwroot/js/CopyToClipboard.js" Line="3" Column="53" />
+      <File FileName="Views/Shared/Error.cshtml" Line="20" Column="1" />
+      <File FileName="Views/Shared/_CopyToClipboardScript.cshtml" Line="1" Column="37" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -41,7 +46,6 @@
           <Node name="Loterie_project_2022" expanded="True">
             <Node name="DataLayer" expanded="True">
               <Node name="Dependencies" expanded="True" />
-              <Node name="Migrations" expanded="True" />
               <Node name="Models" expanded="True" />
             </Node>
             <Node name="Loterie_project_2022" expanded="True">
@@ -57,6 +61,7 @@
               </Node>
               <Node name="wwwroot" expanded="True">
                 <Node name="css" expanded="True" />
+                <Node name="js" expanded="True" />
               </Node>
               <Node name="Program.cs" selected="True" />
             </Node>
@@ -65,5 +70,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
