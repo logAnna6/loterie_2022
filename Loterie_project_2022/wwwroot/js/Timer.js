@@ -12,7 +12,7 @@ var jsDateEnd = new Date(Date.parse(timeend));
         const minutes = Math.floor((total / 1000 / 60) % 60);
 
         if (minutes <= 1) {
-            document.getElementById('play').style.display = none;
+            document.getElementById('play').style.visibility = 'hidden';
         }
         
 
